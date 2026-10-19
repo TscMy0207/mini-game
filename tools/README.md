@@ -6,12 +6,12 @@
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/content_builder/build_content.ps1 -GodotExecutable godot
 ```
 
-构建脚本使用 `ContentPack` 预设，只导出 `games/cat_board` 与 `content`。启动场景、框架服务、平台桥接和主场景留在首包，保证热更新失败时仍可离线启动。
+构建脚本使用 `ContentPack` 预设，只导出内容目录。启动场景、框架服务、平台桥接和主场景留在首包，保证热更新失败时仍可离线启动。
 
 ## 本地 CDN 验证
 
 ```powershell
-python tools/local_cdn/server.py --root ..\cat-mini-game-artifacts\cdn --port 8080
+python tools/local_cdn/server.py --root ..\mini-game-artifacts\cdn --port 8080
 ```
 
 开发验证时，把 `app/config/bootstrap_config.json` 的 `remote_manifest_url` 改为 `http://127.0.0.1:8080/manifest.json`。启动场景会下载、校验 SHA-256、缓存并挂载 PCK；验证后应将该地址恢复为空。

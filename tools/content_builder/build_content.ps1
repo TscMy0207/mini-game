@@ -2,7 +2,7 @@ param(
     [Alias("Godot")]
     [string]$GodotExecutable = "godot",
     [string]$Project = (Join-Path $PSScriptRoot "../.."),
-    [string]$Output = (Join-Path $PSScriptRoot "../../../cat-mini-game-artifacts/cdn")
+    [string]$Output = (Join-Path $PSScriptRoot "../../../mini-game-artifacts/cdn")
 )
 
 $ErrorActionPreference = "Stop"
@@ -10,7 +10,7 @@ $ErrorActionPreference = "Stop"
 $Project = [System.IO.Path]::GetFullPath($Project)
 $Output = [System.IO.Path]::GetFullPath($Output)
 New-Item -ItemType Directory -Force -Path $Output | Out-Null
-$packPath = Join-Path $Output "cat_board.pck"
+$packPath = Join-Path $Output "content.pck"
 if (-not (Test-Path (Join-Path $Project "export_presets.cfg"))) {
     throw "Missing export_presets.cfg at $Project"
 }
