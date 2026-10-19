@@ -1,0 +1,6 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://app/main/main_controller.gd" id="1_main"]
+
+[node name="MainRoot" type="Node"]
+script = ExtResource("1_main")

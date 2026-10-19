@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://hat08hucsmma"]
+
+[ext_resource type="Script" uid="uid://csfki84kls4yd" path="res://app/bootstrap/boot_controller.gd" id="1_nqvk1"]
+
+[node name="BootstrapRoot" type="Node" unique_id=2094748620]
+script = ExtResource("1_nqvk1")

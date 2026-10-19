@@ -1,0 +1,1 @@
+{ "schema": 1.0, "framework_version": "0.2.0", "features": ["bootstrap", "service_registry", "resource_service", "config_service", "storage_service", "update_service", "platform_bridge", "scene_flow", "audio_service", "ui_service", "object_pool", "input_router"] }

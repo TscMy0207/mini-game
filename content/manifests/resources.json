@@ -1,0 +1,1 @@
+{ "scene.main": { "path": "res://app/main/main.tscn", "group": "startup", "version": "0.2.0" }, "ui.main_menu": { "path": "res://app/main/presentation/main_menu_ui.tscn", "group": "main", "version": "0.2.0" } }

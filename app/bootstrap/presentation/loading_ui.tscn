@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d1avsf1lgmys8"]
+
+[ext_resource type="Script" uid="uid://dmvrnytu7124u" path="res://app/bootstrap/presentation/loading_ui.gd" id="1_c6rve"]
+
+[node name="LoadingUI" type="Control" unique_id=1101448772]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_c6rve")
